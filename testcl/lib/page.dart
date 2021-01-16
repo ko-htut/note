@@ -16,8 +16,8 @@ class _CalculatorPageState extends State<CalculatorPage> {
   //  double.parse("")
   //  int.parse("")
   // num1 + num2
-  double num1 = 0;
-  double num2 = 0;
+  int num1 = 0;
+  int num2 = 0;
   String opt = "";
   @override
   Widget build(BuildContext context) {
@@ -82,9 +82,11 @@ class _CalculatorPageState extends State<CalculatorPage> {
         });
       },
       child: Container(
+        width: 55,
+        height: 55,
         padding: EdgeInsets.all(3),
         margin: EdgeInsets.all(3),
-        color: Colors.grey,
+        color: Colors.yellow,
         child: Text(
           data,
         ),
@@ -94,17 +96,20 @@ class _CalculatorPageState extends State<CalculatorPage> {
 
   void calu(String data) {
     if (data == "+") {
-      num1 = double.parse(_caldata);
+      num1 = int.parse(_caldata);
       _caldata = "0";
       opt = data;
-    }
-    if (data == "-") {
-      num1 = double.parse(_caldata);
+      print("num1 $num1");
+    } else if (data == "-") {
+      num1 = int.parse(_caldata);
       _caldata = "0";
       opt = data;
-    }
-    if (data == "=") {
-      num2 = double.parse(_caldata);
+      print("num1 $num1");
+    } else if (data == "=") {
+      print("num1 $num1");
+      num2 = int.parse(_caldata);
+
+      print("num2 $num2");
       if (opt == "-") {
         _caldata = (num1 - num2).toString();
       }
@@ -114,9 +119,13 @@ class _CalculatorPageState extends State<CalculatorPage> {
       num1 = 0;
       num2 = 0;
       opt = "";
-      caldata = _caldata.toString();
+      caldata = _caldata;
+    } else {
+      print("$_caldata");
+      _caldata = _caldata + data;
+      print("num $_caldata");
     }
-    _caldata = _caldata + data;
+
     // 01
   }
 }
