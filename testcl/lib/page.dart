@@ -63,7 +63,8 @@ class _CalculatorPageState extends State<CalculatorPage> {
                       _btn("-"),
                       _btn("+"),
                     ],
-                  )
+                  ),
+                  _btn("=")
                 ],
               ),
             ),
