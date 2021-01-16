@@ -10,6 +10,7 @@ class CalculatorPage extends StatefulWidget {
 class _CalculatorPageState extends State<CalculatorPage> {
   String caldata = "0";
   String _caldata = "0";
+  List<String> his = [];
 
 // 12 + 10 =
   // String => int or double
@@ -116,6 +117,8 @@ class _CalculatorPageState extends State<CalculatorPage> {
       if (opt == "+") {
         _caldata = (num1 + num2).toString();
       }
+      his.add(_caldata);
+      print(his);
       num1 = 0;
       num2 = 0;
       opt = "";
