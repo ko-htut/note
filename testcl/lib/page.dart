@@ -94,10 +94,12 @@ class _CalculatorPageState extends State<CalculatorPage> {
   void calu(String data) {
     if (data == "+") {
       num1 = double.parse(_caldata);
+      _caldata = "0";
       opt = data;
     }
     if (data == "-") {
       num1 = double.parse(_caldata);
+      _caldata = "0";
       opt = data;
     }
     if (data == "=") {
