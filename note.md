@@ -119,4 +119,67 @@ print(f);
  // *
 
  // 
+
+
+ ## Control Flow
+ - if and else
+ - swtich and case
+ - for loops
+ - while and d-while loops
+ - break and continue
+ - assert
+ - try-cash and throw
+
+# if and else
+
+# switch and case
+
+# for loops
+
+# while and d-while loop
+
+while(အခြေအနေတစ်၇ပ်){
+  // လုပ်ဆောင်ချက်တစ်ခုခု
+}
+
+```dart
+int a = 5;
+while(a<=5){
+  print(a);
+}
+```
+
+d-while 
+
+do{
+လုပ်ဆောင်ချက်
+}while(အခြေအနေတစ်၇ပ်);
+
+```dart
+int a = 10;
+do{
+  a= a+5;
+  print(a)
+}while(a!= 10);
+```
+
+# assert
+
+# try  catch  finally
+
+```dart
+
+try{
+  String a = "hello" + 1;
+}catch (e){
+//
+print(e);
+}finally{
+//
+a = "true";
+}
+
+```
+
+
  
