@@ -14,25 +14,9 @@ class MyApp extends StatelessWidget {
     );
   }
 
-// SweepGradient
-// LinearGradient
-  Widget _widget() {
-    return Container(
-        decoration: BoxDecoration(
-            gradient: LinearGradient(
-                begin: Alignment.topRight,
-                end: Alignment.bottomLeft,
-                colors: [
-          Colors.black54,
-          Colors.black,
-          Colors.white,
-        ],
-                stops: [
-          1.0,
-          0.5,
-          0.7
-        ])));
-  }
+// Sweep Gradient
+// Linear Gradient
+// Radial Gradient
 
   Widget _stack() {
     return Stack(
@@ -64,5 +48,48 @@ class MyApp extends StatelessWidget {
         // Align
       ],
     );
+  }
+
+  ///
+  ///### Gradient
+  /// - Linear Gradient
+  /// - Radial Gradient
+  /// - Sweep Gradient
+  ///
+  ///
+  /// #### Linder Gradient
+  /// -begin :
+  /// -end :
+  /// -colors:
+  /// -stops:
+  /// -tileMode: (TileMode.clamp,TileMode.mirror,TileMode.repeated)
+  /// -transform:
+  ///
+  /// ```dart
+  /// gradient : LinearGradient(
+  /// begin :
+  /// end :
+  /// colors:
+  /// stops:
+  /// tileMode:
+  /// transform:
+  /// )
+  /// ```
+  Widget _gradient() {
+    return Container(
+        decoration: BoxDecoration(
+            gradient: LinearGradient(
+                begin: Alignment.topRight,
+                end: Alignment.bottomLeft,
+                colors: [
+          Colors.black54,
+          Colors.black,
+          Colors.white,
+        ],
+                stops: [
+          1.0,
+          0.5,
+          0.7
+        ])));
   }
 }
