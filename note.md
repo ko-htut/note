@@ -182,4 +182,32 @@ a = "true";
 ```
 
 
- 
+တန်ဖိုးတစ်ခု၇၇င် အဲ့တန်ဖိုးကိုစုံကိန်းမကိန်းစစ်မယ်
+ တန်ဖိုးဟာ စုံကိန်းဖြစ်ပြီးတော့ ၆ ထက်ကြီး၇င် ၂ နဲ့စားမယ် 
+ တန်ဖိုးဟာ မကိန်းဖြစ်ပီးတော့ ၅ ထက်ငယ်၇င် ၁ ပေါင်းပီး ၂နဲ့စားမယ် 
+
+
+
+## Project Strusture
+
+- 1 .dart_tool
+- 2 .idea
+- 3 android
+- 4 ios
+- 5 lib
+- 6 test
+- 7 .gitigonre
+- 8 .metadata
+- 9 .package
+- 10 (name).iml  [ testcl.iml]
+
+
+
+## cmd
+- flutter doctor
+- flutter doctor -v
+- flutter run
+- flutter run -v
+- flutter run --release 
+- flutter build apk
+- flutter build apk --release  // .jks

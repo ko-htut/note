@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:testcl/class.dart';
 
+/// THISISISIS
 class CalculatorPage extends StatefulWidget {
   CalculatorPage({Key key}) : super(key: key);
 
@@ -8,6 +10,9 @@ class CalculatorPage extends StatefulWidget {
 }
 
 class _CalculatorPageState extends State<CalculatorPage> {
+  var clas = Calculation;
+ 
+
   String caldata = "0";
   String _caldata = "0";
   List<String> his = [];

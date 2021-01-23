@@ -8,6 +8,9 @@ main(List<String> args) {
     b: 5,
     a: 15,
   );
+
+  var calss = Cal();
+  calss.plus(10);
 }
 
 // Function
@@ -117,3 +120,15 @@ void swit() {
 }
 
 // for loop
+
+class Cal {
+  // +
+  // -
+  // /
+  // *
+
+  void plus(int i) {
+    i = i + 1;
+    //
+  }
+}
